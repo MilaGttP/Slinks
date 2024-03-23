@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: local('Work Sans'), url('../fonts/WorkSansGX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yaldevi';
+    src: local('Yaldevi'), url('../fonts/Yaldevi-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F2F2E9;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: "Yaldevi";
+    font-size: 65px;
+}
+
+.main-sc {
+    background-color: #75BFB8;
+    padding: 120px 0px 120px 0px;
+}
+
+.main-sc-txt {
+    text-align: center;
+    color: white;
+    font-family: "Work Sans";
+    font-size: 45px;
+}
+
+.main-sc-url-div {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.url-input {
+    padding: 15px 40px;
+    width: 550px;
+    font-family: "Work Sans";
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.url-input-a {
+    padding: 15px 40px;
+    color: white;
+    background-color: #255459;
+    font-family: "Work Sans";
+    transition: ease-in-out 0.5s;
+}
+
+.url-input-a:hover {
+    background-color: black;
+}
+
+.history-sc {
+    margin-top: 60px;
+}
+
+.history-h {
+    text-align: center;
+    font-family: "Work Sans";
+    color: #255459;
+    font-size: 32px;
+}
+
+.history-items-div {
+    margin-top: 60px;
+}
+
+.history-item {
+    background-color: white;
+    margin: 0px 150px 0px 150px;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 5px 3px 12px 1px #25545924;
+}
+
+.history-item p {
+    font-family: "Work Sans";
+}
+
+.history-item a {
+    font-size: 20px;
+}
+
+.copy-ic {
+    margin-right: 20px;
+}
+
+.history-sc {
+    margin-bottom: 150px;
+}

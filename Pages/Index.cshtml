@@ -1,10 +1,48 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Slinks";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="main-sc">
+    <div>
+        <h2 class="main-sc-txt">Сервіс коротких посилань</h2>
+    </div>
+    <div class="main-sc-url-div">
+        <input class="url-input" type="url" id="originalUrl" placeholder="Вставте посилання для скорочення" required>
+        <a class="url-input-a" href="">Готово</a>
+    </div>
+</section>
+
+<section class="history-sc">
+    <div>
+        <h3 class="history-h">Історія посилань</h3>
+    </div>
+    <div class="history-items-div">
+        <div class="history-item">
+            <p>https://uk.wikipedia.org/wiki%D0%93</p>
+            <p>https://cutt.ly/Fw9b8hrg</p>
+            <div>
+                <a class="copy-ic" href="">
+                    <img src="assets/copy.svg" alt="copy icon">
+                </a>
+                <a href="">
+                    <img src="assets/stat.svg" alt="stat icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="history-item">
+            <p>https://uk.wikipedia.org/wiki%D0%93</p>
+            <p>https://cutt.ly/Fw9b8hrg</p>
+            <div>
+                <a class="copy-ic" href="">
+                    <img src="assets/copy.svg" alt="copy icon">
+                </a>
+                <a href="">
+                    <img src="assets/stat.svg" alt="stat icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
