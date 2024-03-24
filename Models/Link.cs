@@ -8,6 +8,6 @@ namespace Slinks.Models
         public int Id { get; set; }
         public String InputLink { get; set; }
         public String ShortLink { get; set; }
-        public DateOnly Date { get; set; }
+        public DateTime QueryDate { get; set; }
     }
 }

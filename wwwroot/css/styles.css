@@ -111,18 +111,25 @@ h1 {
     box-shadow: 5px 3px 12px 1px #25545924;
 }
 
-.history-item p {
-    font-family: "Work Sans";
-}
+    .history-item p {
+        font-family: "Work Sans";
+        word-wrap: break-word;
+    }
 
-.history-item a {
-    font-size: 20px;
-}
+    .history-item a {
+        font-family: "Work Sans";
+        font-size: 20px;
+    }
 
 .copy-ic {
     margin-right: 20px;
 }
 
 .history-sc {
-    margin-bottom: 150px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.history-sc.show {
+    opacity: 1;
 }

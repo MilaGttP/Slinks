@@ -8,41 +8,18 @@
     <div>
         <h2 class="main-sc-txt">Сервіс коротких посилань</h2>
     </div>
-    <div class="main-sc-url-div">
-        <input class="url-input" type="url" id="originalUrl" placeholder="Вставте посилання для скорочення" required>
-        <a class="url-input-a" href="">Готово</a>
-    </div>
+    <form method="post">
+        <div class="main-sc-url-div">
+            <input class="url-input" type="url" id="originalUrl" placeholder="Вставте посилання для скорочення" required asp-for="OriginalUrl">
+            <button type="submit" class="url-input-a">Готово</button>
+        </div>
+    </form>
 </section>
 
-<section class="history-sc">
+<section class="history-sc" id="historySection">
     <div>
         <h3 class="history-h">Історія посилань</h3>
     </div>
-    <div class="history-items-div">
-        <div class="history-item">
-            <p>https://uk.wikipedia.org/wiki%D0%93</p>
-            <p>https://cutt.ly/Fw9b8hrg</p>
-            <div>
-                <a class="copy-ic" href="">
-                    <img src="assets/copy.svg" alt="copy icon">
-                </a>
-                <a href="">
-                    <img src="assets/stat.svg" alt="stat icon">
-                </a>
-            </div>
-        </div>
-
-        <div class="history-item">
-            <p>https://uk.wikipedia.org/wiki%D0%93</p>
-            <p>https://cutt.ly/Fw9b8hrg</p>
-            <div>
-                <a class="copy-ic" href="">
-                    <img src="assets/copy.svg" alt="copy icon">
-                </a>
-                <a href="">
-                    <img src="assets/stat.svg" alt="stat icon">
-                </a>
-            </div>
-        </div>
+    <div class="history-items-div" id="linksHistory">
     </div>
 </section>
