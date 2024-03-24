@@ -2,3 +2,21 @@
 @model Slinks.Pages.StatisticsModel
 @{
 }
+
+<div class="stat-div">
+    <h3 class="history-h">Статистика популярності</h3>
+</div>
+
+<div class="queries-div">
+    <div class="query-item">
+        <p>Дата</p>
+        <p>Кількість запитів</p>
+    </div>
+    @foreach (var date in Model.Dates)
+    {
+        <div class="query-item">
+            <p>@date.ToString("dd/MM/yyyy")</p>
+            <p>@Model.Count</p>
+        </div>
+    }
+</div>

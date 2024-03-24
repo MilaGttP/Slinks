@@ -48,7 +48,7 @@ namespace Slinks.Pages
                 QueryDate = DateTime.UtcNow.Date
             };
 
-            ViewData["ShortLink"] = shortLink;
+            TempData["OriginalUrl"] = OriginalUrl;
 
             _context.Links.Add(link);
             await _context.SaveChangesAsync();

@@ -94,6 +94,8 @@ h1 {
     font-family: "Work Sans";
     color: #255459;
     font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 40px;
 }
 
 .history-items-div {
@@ -107,7 +109,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     box-shadow: 5px 3px 12px 1px #25545924;
 }
 
@@ -132,4 +134,54 @@ h1 {
 
 .history-sc.show {
     opacity: 1;
+}
+
+.query-item {
+    background-color: #D1F6F2CC;
+    margin: 0px 250px 0px 250px;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    border: 1px solid #255459;
+}
+
+    .query-item p {
+        font-family: "Work Sans";
+    }
+
+
+@media screen and (max-width: 768px) {
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .query-item {
+        margin: 0px 20px 5px 20px;
+    }
+
+    .main-sc-url-div {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .url-input-a {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .url-input {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .url-input {
+        width: 350px;
+    }
 }

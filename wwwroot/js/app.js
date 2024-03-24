@@ -31,6 +31,10 @@ function addToHistory(url, backendUrl) {
     listItem.appendChild(buttonsContainer);
 
     list.appendChild(listItem);
+
+    statButton.addEventListener('click', function () {
+        window.location.href = '/Statistics';
+    });
 }
 
 function showHistory() {
