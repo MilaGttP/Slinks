@@ -2,4 +2,4 @@
 
 Slinks (slim links, small links) - Додаток для скорочення (ущільнення) посилань
 
-Посилання на перегляд - https://slinks.azurewebsites.net
+Посилання на перегляд - https://sslinks.azurewebsites.net
